@@ -107,7 +107,10 @@ SHRP_DEVICE_CODE := tb8765ap1_bsp
 # Recovery Type (It can be treble,normal,SAR) [Only for About Section] *
 SHRP_REC_TYPE := Treble
 # Recovery Type (It can be A/B or A_only) [Only for About Section] *
-SHRP_DEVICE_TYPE := A_Only
+SHRP_DEVICE_TYPE := A/B
+
+# Use this flag only if your device is A/B *
+SHRP_AB := true
 
 # put this 0 if device has no EDL mode *
 SHRP_EDL_MODE := 0
