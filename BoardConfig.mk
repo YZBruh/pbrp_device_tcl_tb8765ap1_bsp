@@ -93,38 +93,10 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+TW_DEVICE_VERSION := Build_by
+TW_DEFAULT_DEVICE_NAME := tb8765ap1_bsp
 TW_DEFAULT_LANGUAGE := en
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
-
-# Path of your SHRP Tree
-SHRP_PATH := device/tcl/tb8765ap1_bsp
-# Maintainer name *
-SHRP_MAINTAINER := YZ-Bruh
-# Device codename *
-SHRP_DEVICE_CODE := tb8765ap1_bsp
-# Recovery Type (It can be treble,normal,SAR) [Only for About Section] *
-SHRP_REC_TYPE := Treble
-# Recovery Type (It can be A/B or A_only) [Only for About Section] *
-SHRP_DEVICE_TYPE := A/B
-
-# Use this flag only if your device is A/B *
-SHRP_AB := true
-
-# put this 0 if device has no EDL mode *
-SHRP_EDL_MODE := 0
-
-# Put your device's paths from fstab *
-SHRP_EXTERNAL := /external_sd
-SHRP_INTERNAL := /sdcard
-SHRP_OTG := /usb_otg
-
-# Check your device's recovery path, dont use blindly *
-SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
-
-# SHRP Lite To exclude theming as PArtition Size only 16 MB For everyone
-SHRP_LITE := true
-
-# Force mount system in /system despite SAR policy, useful for maintaining backwards compatibility and/or Samsung devices. [Optional]
-SHRP_NO_SAR_AUTOMOUNT := true
+TW_NO_SCREEN_TIMEOUT := true
